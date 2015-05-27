@@ -1,7 +1,8 @@
 function remoteCallback(position){
     $('#offline').hide();
     $('#online').show().html('baidu map:').append('<div id="userMap" class="userMap" style="height:500px;width:100%;background-color: #000;"></div>');
-    $.getScript('http://api.map.baidu.com/api?v=2.0&ak=XoGIq1S4vnlzaTVuTQZsHSPi',function(){
+    window.BMap_loadScriptTime = (new Date).getTime();
+    $.getScript('http://api.map.baidu.com/getscript?v=2.0&ak=XoGIq1S4vnlzaTVuTQZsHSPi&services=&t=20150525152504',function(){
         alert('load script success!');
         // 百度地图API功能
         	var map = new BMap.Map("userMap");
