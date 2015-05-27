@@ -1,0 +1,2 @@
+$('#offline').hide();
+$('#online').show();
