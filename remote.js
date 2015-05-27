@@ -1,4 +1,4 @@
 function remoteCallback(){
     $('#offline').hide();
-    $('#online').show();
+    $('#online').show().html('yes!');
 }
