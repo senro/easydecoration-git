@@ -1,2 +1,4 @@
-$('#offline').hide();
-$('#online').show();
+function remoteCallback(){
+    $('#offline').hide();
+    $('#online').show();
+}
