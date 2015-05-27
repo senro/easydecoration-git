@@ -1,6 +1,6 @@
 function remoteCallback(position){
     $('#offline').hide();
-    $('#online').show().html('yes!');
+    $('#online').show().html('yeah yeah!');
      alert('Latitude: '          + position.coords.latitude          + '\n' +
                   'Longitude: '         + position.coords.longitude         + '\n' +
                   'Altitude: '          + position.coords.altitude          + '\n' +
