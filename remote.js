@@ -1,6 +1,6 @@
 function remoteCallback(position){
     $('#offline').hide();
-    $('#online').show().append('<div id="userMap" class="userMap" style="height:500px;width:100%;"></div>');
+    $('#online').show().append('<div id="userMap" class="userMap" style="height:500px;width:100%;background-color: #000;"></div>');
     $.getScript('http://api.map.baidu.com/api?v=2.0&ak=XoGIq1S4vnlzaTVuTQZsHSPi',function(){
         // 百度地图API功能
         	var map = new BMap.Map("userMap");
